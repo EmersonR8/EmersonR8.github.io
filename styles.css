@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('baby2.jpg');
+    min-height: 100vh; /* Asegura que el body tenga al menos el tamaño de la ventana */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija en su posición al hacer scroll */
+    background-repeat: no-repeat;
+}
+
+
+body {
+    background-image: url('baby2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-container {
+    width: 80%; /* Ajusta el ancho del contenedor */
+    height: 30vh; /* Ajusta la altura */
+    /*overflow-y: scroll; *//* Habilita el scroll vertical */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el contenedor */
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 10px; /* Ancho del scroll personalizado */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color cuando el cursor está sobre la barra */
+}
+
+.content {
+    height: 200vh; /* Contenido largo para hacer scroll */
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#cuenta{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.simply-section{
+    background: #fff;
+    width: 180px;
+    height: 180px;
+    margin:0px 20px;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.simply-amount{
+    display: block;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@media (max-width: 847px) {
+    h1{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 712px) {
+    h1{
+        font-size: 23px;
+    }
+
+    .simply-section{
+        background: #fff;
+        width: 90px;
+        height: 90px;
+        margin:0px 10px;
+        border-radius: 5px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+
+    .simply-amount{
+        display: block;
+        font-size: 30px;
+        font-family: "Pacifico", cursive;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    h1{
+        font-size: 20px;
+    }
+
+    .scroll-container {
+        height: 25vh;
+    }
+
+}
