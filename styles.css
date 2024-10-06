@@ -30,6 +30,7 @@ body {
 }
 
 .scroll-container {
+    margin-top: -300px;
     width: 80%; /* Ajusta el ancho del contenedor */
     height: 30vh; /* Ajusta la altura */
     /*overflow-y: scroll; *//* Habilita el scroll vertical */
@@ -53,8 +54,9 @@ body {
 }
 
 .content {
-    height: 200vh; /* Contenido largo para hacer scroll */
+    height: 90vh; /* Contenido largo para hacer scroll */
     color: #333;
+    
 }
 
 h1{
@@ -98,6 +100,13 @@ h1{
     }
 }
 
+@media (max-width: 800px) {
+    body {
+        background-image: url('responsiveBaby.jpg');
+      
+    }
+}
+
 
 @media (max-width: 712px) {
     h1{
@@ -125,6 +134,13 @@ h1{
         text-align: center;
     }
 
+   
+    body {
+        background-image: url('responsiveBaby.jpg');
+      
+    }
+    
+
 }
 
 @media (max-width: 430px) {
@@ -137,4 +153,68 @@ h1{
         height: 25vh;
     }
 
+
+    body {
+        background-image: url('responsiveBaby.jpg');
+      
+    }
+
+
+    #arrow{
+        margin-left: 20px;
+    }
+
+
+
 }
+
+
+.button{
+    
+     
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    font-family: sans-serif; /* Fuente sin serifas */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; 
+    display: inline-block;
+    margin-left: 20px;
+    
+     
+ }
+ 
+ 
+ button:hover {
+     background-color: #e0e0e0; /* Fondo ligeramente más oscuro al pasar el ratón */
+   }
+
+   .container {
+    margin-top: -20px;
+    display: flex; /* Hacemos que los elementos dentro de .container se comporten como una flexbox */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    
+}
+
+
+#revelar{
+    background-color: #710088; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    border: none; /* Sin borde */
+    padding: 20px 30px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    font-family: sans-serif; /* Fuente sin serifas */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease; 
+    display: inline-block;
+    margin-left: 20px;
+    display: none;
+    margin-left: 32%;
+    margin-top: 50px;
+    color: white;
+}
+
